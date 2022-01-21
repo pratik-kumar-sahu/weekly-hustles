@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto:wght@300;400;500&display=swap');
+
+:root {
+    --lighter-gray: #f3f4f6;
+    --light-gray: #6b7280;
+    --medium-gray: #374151;
+    --dark-gray: #111827;
+
+    --white: #fff;
+    --black: #000;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    letter-spacing: 0.05rem;
+    font-family: 'Roboto', sans-serif;
+    padding: 5rem;
+    color: var(--medium-gray);
+}
+
+section {
+    width: 100%;
+    min-height: 5rem;
+    content: '';
+    border-radius: 1rem;
+    padding: 0 0.5rem;
+    background-color: var(--lighter-gray);
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chips {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0.5rem;
+    padding: 0.5rem 0.8rem;
+    border-radius: 1rem;
+    color: var(--white);
+    background-color: var(--light-gray);
+}
