@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto:wght@300;400;500&display=swap');
+
+:root {
+    --lighter-gray: #f3f4f6;
+    --light-gray: #6b7280;
+    --medium-gray: #374151;
+    --dark-gray: #111827;
+
+    --white: #fff;
+    --black: #000;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    letter-spacing: 0.05rem;
+    font-family: 'Roboto', sans-serif;
+    color: var(--medium-gray);
+}
+
+/* Style - 1 */
+.main-body {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 5rem;
+    background-color: var(--lighter-gray);
+}
+
+.content {
+    padding: 1.5rem;
+}
+
+.section {
+    background-color: var(--white);
+    width: 35rem;
+    height: 38rem;
+    border-radius: 0.3rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0.05rem 0.1rem 0.4rem var(--light-gray), -0.05rem -0.1rem #fff;
+}
+
+.image {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.heading {
+    margin-bottom: 0.5rem;
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: var(--dark-gray);
+}
+
+.para {
+    color: var(--light-gray);
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+
+.author {
+    margin-bottom: 1.5rem;
+}
+
+.buttons {
+    height: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon {
+    width: 2rem;
+    height: 2rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.icon:hover {
+    background-color: var(--lighter-gray);
+}
+
+.btn {
+    padding: 0.7rem 0.9rem;
+    border-radius: 0.5rem;
+    color: royalblue;
+    background-color: var(--white);
+    border-style: none;
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}
+
+.btn:hover {
+    background-color: var(--lighter-gray);
+}
