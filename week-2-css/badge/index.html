@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>Badge</title>
+    </head>
+    <body>
+        <section class="section">
+            <div class="row">
+                Text with a badge
+                <span class="badge-1">4</span>
+            </div>
+
+            <div class="row">
+                Text with large badge
+                <span class="badge-1 badge-large">4</span>
+            </div>
+
+            <div class="row">
+                Button with a badge on the left
+                <button class="action-btn">Action<span class="badge-1 badge-on-top-left">4</span></button>
+            </div>
+
+            <div class="row">
+                Button toggles badge visibility
+                <button class="hide-btn">Hide<span class="badge-1 badge-on-top-right">7</span></button>
+            </div>
+
+            <div class="row">
+                <ion-icon class="icon" name="home"></ion-icon>
+                <span class="badge-1 badge-on-top-right red">7</span>
+            </div>
+        </section>
+
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
+    </body>
+</html>

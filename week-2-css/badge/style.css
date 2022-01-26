@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto:wght@300;400;500&display=swap');
+
+:root {
+    --lighter-gray: #f3f4f6;
+    --light-gray: #6b7280;
+    --medium-gray: #374151;
+    --dark-gray: #111827;
+
+    --white: #fff;
+    --black: #000;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    letter-spacing: 0.05rem;
+    font-family: 'Roboto', sans-serif;
+    color: var(--medium-gray);
+}
+
+button {
+    cursor: pointer;
+}
+
+.section {
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    margin: 2rem;
+    align-self: flex-start;
+    position: relative;
+}
+
+.badge-1 {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    left: 98%;
+    top: -1.2rem;
+    color: var(--white);
+    background-color: royalblue;
+    border-radius: 50%;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.badge-large {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.8rem;
+    left: 96%;
+}
+
+.action-btn {
+    position: relative;
+    padding: .6rem 1rem;
+    color: var(--white);
+    background-color: royalblue;
+    border-style: none;
+    border-radius: .6rem;
+    font-size: 1.7rem;
+}
+
+.badge-on-top-left {
+    left: -16%;
+    top: -.9rem;
+    background-color: tomato;
+}
+
+.hide-btn {
+    position: relative;
+    padding: .6rem 1rem;
+    color: var(--dark-gray);
+    background-color: var(--white);
+    border-style: none;
+    border-radius: .6rem;
+    font-size: 1.4rem;
+    box-shadow: 0.05rem 0.1rem 0.4rem var(--light-gray), -0.05rem -0.1rem #fff;
+}
+
+.badge-on-top-right {
+    left: 85%;
+    top: -1rem;
+    background-color: royalblue;
+}
+
+.icon {
+    position: relative;
+}
+
+.red {
+    background-color: tomato;
+}
