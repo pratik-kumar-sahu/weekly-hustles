@@ -13,20 +13,21 @@
     </head>
     <body>
         <div class="main-body">
-            <div class="section">
+            <div id="sectionClass" class="section">
                 <img
+                    id="imageClass"
                     class="image"
                     src="https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
                     alt="sky"
                 />
-                <div class="content">
-                    <p class="heading">Our Changing Planet</p>
+                <div id="contentClass" class="content">
+                    <p id="headingClass" class="heading">Our Changing Planet</p>
                     <p class="author">by Kurt Wagner</p>
-                    <p class="para">
-                        Visit ten places on our planet that are undergoing the
-                        biggest changes today.
-                    </p>
                 </div>
+                <p id="paraClass" class="para">
+                    Visit ten places on our planet that are undergoing the
+                    biggest changes today.
+                </p>
                 <div class="buttons">
                     <div>
                         <button class="btn btn-read">READ</button>
@@ -44,6 +45,10 @@
                 </div>
             </div>
         </div>
+        <select name="select-cards" id="select-cards" onchange="selectCards()">
+            <option value="0">Basic</option>
+            <option value="1">Basic w/ Text over Media</option>
+        </select>
 
         <script
             type="module"
@@ -54,4 +59,31 @@
             src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
         ></script>
     </body>
+    <script>
+        const selectCards = () => {
+            const cardSelection = document.getElementById('select-cards');
+
+            if (cardSelection.value === '0') {
+                document.getElementById('sectionClass').classList = ['section'];
+                document.getElementById('imageClass').classList = ['image'];
+                document.getElementById('headingClass').classList = ['heading'];
+                document.getElementById('contentClass').classList = ['content'];
+                document.getElementById('paraClass').classList = ['para'];
+            } else if (cardSelection.value === '1') {
+                document.getElementById('sectionClass').classList = [
+                    'section section1'
+                ];
+                document.getElementById('imageClass').classList = [
+                    'image image1'
+                ];
+                document.getElementById('headingClass').classList = [
+                    'heading heading1'
+                ];
+                document.getElementById('contentClass').classList = [
+                    'content content1'
+                ];
+                document.getElementById('paraClass').classList = ['para para1'];
+            }
+        };
+    </script>
 </html>

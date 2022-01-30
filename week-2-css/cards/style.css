@@ -41,6 +41,12 @@ body {
     padding: 1.5rem;
 }
 
+.content1 {
+    position: absolute;
+    top: 12rem;
+    color: white;
+}
+
 .section {
     background-color: var(--white);
     width: 35rem;
@@ -53,9 +59,21 @@ body {
     box-shadow: 0.05rem 0.1rem 0.4rem var(--light-gray), -0.05rem -0.1rem #fff;
 }
 
+.section1 {
+    position: relative;
+    height: 30rem;
+    padding-bottom: 1.5rem;
+}
+
 .image {
     width: 100%;
     height: 50%;
+    object-fit: cover;
+}
+
+.image1 {
+    width: 100%;
+    height: 70%;
     object-fit: cover;
 }
 
@@ -66,10 +84,19 @@ body {
     color: var(--dark-gray);
 }
 
+.heading1 {
+    color: white;
+}
+
 .para {
     color: var(--light-gray);
     font-weight: 300;
     font-size: 1.3rem;
+    margin: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.para1 {
+    margin-top: 1.5rem;
 }
 
 .author {
