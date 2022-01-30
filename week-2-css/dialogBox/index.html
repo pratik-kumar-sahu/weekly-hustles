@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>Dialog Box</title>
+    </head>
+    <body>
+        <section class="section">
+            <button id="alertBtn" onclick="toggleBtn()">
+                Open Alert Dialog
+            </button>
+            <div id="dialog-box">
+                <div class="content">
+                    <h3>Dialog header</h3>
+                    <p>Dialog body text</p>
+                </div>
+                <div class="action-btns">
+                    <span></span>
+                    <span onclick="actionBtn()">Action 1</span>
+                    <span onclick="actionBtn()">Action 2</span>
+                </div>
+            </div>
+        </section>
+
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
+    </body>
+    <script>
+        document.getElementById('dialog-box').style.display = 'none';
+
+        const toggleBtn = () => {
+            const dialogBox = document.getElementById('dialog-box');
+            const alertBtn = document.getElementById('alertBtn');
+
+            if (dialogBox.style.display === 'none') {
+                dialogBox.style.display = 'block';
+                alertBtn.style.display = 'none';
+            } else {
+                dialogBox.style.display = 'none';
+                alertBtn.style.display = 'block';
+            }
+        };
+
+        const actionBtn = () => {
+            const dialogBox = document.getElementById('dialog-box');
+
+            if (dialogBox.style.display === 'none') {
+                dialogBox.style.display = 'block';
+                alertBtn.style.display = 'none';
+            } else {
+                dialogBox.style.display = 'none';
+                alertBtn.style.display = 'block';
+            }
+        };
+    </script>
+</html>
