@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>Tabs</title>
+    </head>
+    <body>
+        <section class="section">
+            <div class="container">
+                <span id="tab1" onclick="toggleTab1()">TAB ONE</span>
+                <span id="tab2" onclick="toggleTab2()">TAB TWO</span>
+                <span id="tab3" onclick="toggleTab3()">TAB THREE</span>
+            </div>
+        </section>
+
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
+    </body>
+    <script>
+        document.getElementById('tab1').classList.add('active');
+
+        const toggleTab1 = () => {
+            document.getElementById('tab1').classList.add('active');
+            document.getElementById('tab2').classList.remove('active');
+            document.getElementById('tab3').classList.remove('active');
+        };
+
+        const toggleTab2 = () => {
+            document.getElementById('tab2').classList.add('active');
+            document.getElementById('tab1').classList.remove('active');
+            document.getElementById('tab3').classList.remove('active');
+        };
+
+        const toggleTab3 = () => {
+            document.getElementById('tab3').classList.add('active');
+            document.getElementById('tab2').classList.remove('active');
+            document.getElementById('tab1').classList.remove('active');
+        };
+    </script>
+</html>
